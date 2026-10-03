@@ -21,6 +21,8 @@ builder.Services.AddScoped<CategoriaService>();
 
 builder.Services.AddScoped<ChamadoService>();
 
+builder.Services.AddScoped<InteracaoService>();
+
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
