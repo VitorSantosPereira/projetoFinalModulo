@@ -22,6 +22,7 @@ public class CategoriaRepository
     public async Task<Categoria?> BuscarPorId(int id)
     {
         return await _context.Categorias
+            .Include(c => c.Chamados)
             .FirstOrDefaultAsync(c => c.Id == id);
     }
 

@@ -1,6 +1,7 @@
 using DeskFlowAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using DeskFlowAPI.Repositories;
+using DeskFlowAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,13 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<CategoriaRepository>();
 
 builder.Services.AddScoped<ChamadoRepository>();
+
+builder.Services.AddScoped<InteracaoRepository>();
+
+builder.Services.AddScoped<CategoriaService>();
+
+builder.Services.AddScoped<ChamadoService>();
+
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
