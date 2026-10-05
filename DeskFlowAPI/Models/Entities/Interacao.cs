@@ -1,3 +1,5 @@
+using System.Text.Json.Serialization;
+
 namespace DeskFlowAPI.Models.Entities;
 
 public class Interacao
@@ -12,5 +14,6 @@ public class Interacao
 
     public DateTime DataRegistro { get; set; }
 
-    public Chamado Chamado { get; set; } = null!;
+    [JsonIgnore]
+    public Chamado? Chamado { get; set; }
 }

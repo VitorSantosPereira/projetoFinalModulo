@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using DeskFlowAPI.Repositories;
 using DeskFlowAPI.Services;
 using System.Text.Json.Serialization;
+using DeskFlowAPI.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +31,8 @@ builder.Services.AddControllers()
     });
 
 var app = builder.Build();
+
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 if (app.Environment.IsDevelopment())
 {
