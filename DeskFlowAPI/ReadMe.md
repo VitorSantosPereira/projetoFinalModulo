@@ -13,6 +13,10 @@ O sistema permite cadastrar categorias, abrir e acompanhar chamados, adicionar i
 * SQL Server
 * OpenAPI
 
+## Membros
+
+* Vitor Santos
+
 ## Como Executar
 
 ### Pré-requisitos
@@ -81,4 +85,4 @@ http://localhost:5284
 
 ## Vídeo de Apresentação
 
-[Link para o vídeo de demonstração](https://link-do-seu-video)
+[Link para o vídeo de demonstração](https://youtu.be/CYZQZyRUbI8)
